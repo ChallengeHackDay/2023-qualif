@@ -7,7 +7,9 @@ HackDay is a cybersecurity challenge open to all students. The 2023 qualificatio
 Big congratulations to the 133 participating teams !
 
 
-## About challenges
+## About
+
+### Challenges
 
 All challenges were created with love by the students : 
 - Antoine
@@ -27,6 +29,15 @@ And thanks to the Devoteam Cyber Trust team :
 - Pic
 - Skib
 - Syca
+
+### Story
+
+This year, a story has been developed to bring together the different challenges. This would not have been possible without the work of :
+- Elie DUBOUX
+- Jules LELAY
+- Antoine PALLISER
+- Romain COLOMBIÉ
+- Julien ARCHAMBAULT
 
 
 ## Acknowledgements
