@@ -1,0 +1,114 @@
+html, body, h1, form, fieldset, input {
+    padding: 0;
+    border: none;
+    margin: 0px;
+}
+
+h1{
+    margin-top: 50px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body { 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 12px; 
+    background: linear-gradient(to right, #ff9933 0%, #000099 83%);
+    margin: auto;
+}
+#registration {
+    color: #fff;
+    background: #2d2d2d;
+    border-radius: 10px;
+    width: 690px;
+    height: 550px;
+    margin-top: 8%;
+
+}
+
+#registration a {
+    color: #8c910b;
+    text-shadow: 0px -1px 0px #000;
+}
+
+#registration fieldset {
+    padding: 20px;
+
+}
+
+
+input.text {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border:solid 1px #444;
+    font-size: 14px;
+    width: 90%;
+    padding: 7px 8px 7px 30px;
+    margin-bottom: 45px;
+    -moz-box-shadow: 0px 1px 0px #777;
+    -webkit-box-shadow: 0px 1px 0px #777;
+    background: url('../img/inputSprite.png') no-repeat #b8b8b8;
+    text-shadow:0px 1px 0px #FFF;
+
+}
+input#email {
+    background-position: 4px 5px;
+}
+
+input#name {
+    background-position: 4px -50px;
+}
+
+input#tel {
+    background-position: 4px -75px;
+}
+
+#registration h2 {
+    color: #fff;
+    text-shadow: 0px -1px 0px #000;
+    border-bottom: solid #181818 1px;
+    -moz-box-shadow: 0px 1px 0px #3a3a3a;
+    text-align: center;
+    padding: 18px;
+    margin: 0px;
+    font-weight: normal;
+    font-size: 24px;
+    font-family: Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+#infoMessage {
+    margin-top: 36px;
+    color: white;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#registerNew {
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    float: center;
+    background-color: #219619;
+    border-color: black;
+    color: white;
+}
+
+#registerNew:hover{
+    background-color: #27ae1e;
+}
+
+#registration p {
+    position: relative;
+}
+
+fieldset label.infield /* .infield label added by JS */ {
+    color: #333;
+    text-shadow: 0px 1px 0px #fff;
+    position: absolute;
+    text-align: left;
+    top: 3px !important;
+    left: 35px !important;
+    line-height: 29px;
+}

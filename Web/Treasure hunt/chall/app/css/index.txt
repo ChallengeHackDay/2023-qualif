@@ -1,0 +1,50 @@
+body{
+	margin: auto;
+	background-color: #fff3de;
+
+}
+
+form{
+	border: solid black 2px;
+	border-radius: 8px;
+	width: 400px;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial;
+	padding-top: 30px;
+	padding-left: 40px;
+	margin: auto;
+	margin-top: 15%;
+
+	background-color: #d8c495;
+}
+
+.username, .password{
+	margin-bottom: 30px;
+	display: flex;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+button{
+	width: 250px;
+	margin-left: 45px;
+	height: 35px;
+	background-color: #a88e60;
+	border-radius: 15px;
+}
+
+input{
+	height: 30px;
+	border-radius: 3px;
+	border: solid black 1px;
+	margin-left: 25px;
+}
+
+#errorMessage{
+	color: red;
+	font-style: italic;
+	text-align: center;
+	font-family: Arial;
+}
