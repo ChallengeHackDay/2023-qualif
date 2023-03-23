@@ -13,16 +13,16 @@ Big congratulations to the 133 participating teams !
 
 All challenges were created with love by the students : 
 - Antoine
-- Blackjack 
+- Blackjack = Théo PERESSE-GOURBIL
 - Chelinka
-- Didouad
-- Elf 
-- Enderend
+- Didouad = Adrien BEHR
+- Elf = Cyprien MOLINET
+- Enderend 
 - Euryale
-- Isnubi
-- Lucky 
+- Isnubi = Louis GAMBART
+- Lucky = Manon HERMANN
 - Quentin 
-- Yam
+- Yam = Yanis AMARA
 - ZEN
 
 And thanks to the Devoteam Cyber Trust team :
