@@ -1,0 +1,9 @@
+FROM ethereum/client-go:v1.10.26
+WORKDIR /app
+COPY genesis.json .
+RUN geth --datadir validator init genesis.json
+COPY validator_password.txt .
+COPY validator_private_key.txt .
+RUN geth account import --datadir validator --password validator_password.txt validator_private_key.txt | cut -d '{' -f 2 | cut -d '}' -f 1 > pub_key.txt
+ENTRYPOINT ["sh", "-c"]
+CMD ["geth --datadir validator --syncmode full --networkid 23 --unlock $(cat pub_key.txt) --password validator_password.txt --mine --miner.gasprice 0 --ipcpath validator --port 30304 --authrpc.port 8552 --nodiscover --ethstats validator:$WS_SECRET@monitor:3000"]

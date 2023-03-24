@@ -1,0 +1,11 @@
+FROM node:16.17.0-alpine
+WORKDIR /app
+RUN apk update
+RUN apk add git
+RUN npm install -g grunt-cli
+RUN git clone https://github.com/goerli/ethstats-server.git
+WORKDIR /app/ethstats-server
+RUN npm install
+RUN grunt poa
+EXPOSE 3000
+CMD ["npm", "start"]

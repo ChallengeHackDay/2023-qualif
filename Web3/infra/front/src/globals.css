@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+body::after {
+    content: "";
+    background: url("/asteroids.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.codeBlock {
+    width: 850px;
+    border-radius: 10px;
+    padding: 20px !important;
+    margin: auto !important;
+    margin-bottom: 30px !important;
+}

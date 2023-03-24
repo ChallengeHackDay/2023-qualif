@@ -1,0 +1,65 @@
+services:
+  back:
+    build:
+      context: ./back
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./back/.env
+  front:
+    build:
+      context: ./front
+    ports:
+      - "80:80"
+  ipfs:
+    build:
+      context: ./ipfs
+    ports:
+      - "4001:4001"
+      - "4001:4001/udp"
+    volumes:
+      - ./ipfs/staging:/export
+      - ./ipfs/data:/data/ipfs
+  monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitor
+    ports:
+      - "33333:3000"
+    env_file:
+      - .env
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    depends_on:
+      - monitor
+    volumes:
+      - node-volume:/app/node
+    ports:
+      - "8545:8545"
+    env_file:
+      - .env
+  validator:
+    build:
+      context: .
+      dockerfile: Dockerfile.validator
+    depends_on:
+      - monitor
+    volumes:
+      - validator-volume:/app/validator
+    env_file:
+      - .env
+  linker:
+    build:
+      context: .
+      dockerfile: Dockerfile.linker
+    depends_on:
+      - node
+      - validator
+    volumes:
+      - node-volume:/app/node
+      - validator-volume:/app/validator
+volumes:
+  node-volume:
+  validator-volume:

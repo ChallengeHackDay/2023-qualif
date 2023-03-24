@@ -1,0 +1,5 @@
+services:
+  trusted:
+    build: .
+    ports:
+      - "1338:1338"

@@ -1,0 +1,7 @@
+FROM ethereum/client-go:v1.10.26
+WORKDIR /app
+COPY genesis.json .
+RUN geth --datadir node init genesis.json
+EXPOSE 8545
+ENTRYPOINT ["sh", "-c"]
+CMD ["geth --datadir /app/node --syncmode full --networkid 23 --ipcpath node --nodiscover --http --http.addr 0.0.0.0 --http.vhosts '*' --ethstats node:$WS_SECRET@monitor:3000"]

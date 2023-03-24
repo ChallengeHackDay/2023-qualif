@@ -1,0 +1,5 @@
+services:
+  parrot:
+    build: .
+    ports:
+      - "1340:1337"
