@@ -1,4 +1,4 @@
-# 2023 qualificiation
+l# 2023 qualificiation
 
 ## Informations
 
@@ -29,6 +29,9 @@ And thanks to the Devoteam Cyber Trust team :
 - Pic
 - Skib
 - Syca
+
+And thanks to your web developer:
+- Suylo = Louis LUBINEAU
 
 ### Story
 
