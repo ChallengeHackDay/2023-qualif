@@ -30,7 +30,7 @@ And thanks to the Devoteam Cyber Trust team :
 - Skib
 - Syca
 
-And thanks to your web developer:
+And thanks to our web developer:
 - Suylo = Louis LUBINEAU
 
 ### Story
